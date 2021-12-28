@@ -17,7 +17,7 @@ namespace RdpViaSsh
                 var userSettingsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "RdpViaSsh", "setting.ini");
                 if(!File.Exists(userSettingsPath))
                 {
-                    Console.WriteLine($"Не найден файл конфигурации {userSettingsPath}");
+                    Console.WriteLine($"Configuration file not found. {userSettingsPath}");
                     Console.Read();
                     return;
                 }
